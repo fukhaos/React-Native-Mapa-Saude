@@ -40,7 +40,7 @@ const MapScreen = ({ navigation, route }) => {
         {data.map((place) => {
           return (
             <Marker
-              onPress={() => navigation.navigate('Detail', { place: place })}
+              onCalloutPress={() => navigation.navigate('Detail', { place: place })}
               image={pino}
               coordinate={{ latitude: place.lat, longitude: place.long }}
               title={place.nomeFantasia}
